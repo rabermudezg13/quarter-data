@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Processor</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Excel Processor</h1>
+        <div class="upload-container">
+            <div class="upload-area" id="dropZone">
+                <input type="file" id="fileInput" accept=".xlsx, .xls" hidden>
+                <div class="upload-content">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2965/2965879.png" alt="Upload" class="upload-icon">
+                    <p>Drag & Drop your Excel file here or</p>
+                    <button class="upload-button" onclick="document.getElementById('fileInput').click()">Choose File</button>
+                </div>
+            </div>
+            <div id="fileInfo" class="file-info"></div>
+        </div>
+        <div id="results" class="results-container" style="display: none;">
+            <h2>Processing Results</h2>
+            <div id="resultsContent"></div>
+            <button id="downloadBtn" class="download-button" style="display: none;">Download Results</button>
+        </div>
+        <footer class="copyright">
+            <p>© Rodrigo Bermudez 2025</p>
+            <p>For exclusive use of Kelly Education</p>
+            <p>No information is stored on external servers and will not be shared</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
